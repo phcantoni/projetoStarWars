@@ -1,0 +1,1181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 83vh;
+    background-image: url(./assets/imgTopo.png);
+    background-size: 100%;
+    background-position: 0 -3em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+    padding-left: 9vw;
+  }
+  header .firstFigureHeader {
+    /*position: relative;
+    right: -16vw;*/
+    display: flex;
+    align-items: flex-end;
+    width: 3vw;
+    height: 28vh;
+  }
+  header section figure {
+    display: flex;
+    align-items: flex-end;
+    height: 30vh;
+  }
+  header figure img {
+    width: 25vw;
+    height: 13vh;
+  }
+  header .figureHeaderKylo {
+    display: flex;
+    justify-content: flex-end;
+    width: 55vw;
+    height: 97vh;
+  }
+  header .figureHeaderKylo img {
+    /*position: relative;
+    top: 7vh;
+    right: 12vw;*/
+    z-index: 1;
+    width: 67vw;
+    height: 110vh;
+    /*border: orangered solid;*/
+  }
+  header section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 10.3vw;
+    height: 0.5vh;
+    /*position: relative;
+    top: 12vh;
+    right: 25vw;*/
+  }
+  header h2 {
+    display: flex;
+    align-items: center;
+    width: 12vw;
+    height: 20vh;
+    font-weight: 300;
+    padding-top: 1.5em;
+  }
+  header span {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    width: 16.5vw;
+    height: 9vh;
+  }
+  header .firstDivHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 35vh;
+  }
+  header .secondDivHeader {
+    display: flex;
+    align-items: flex-end;
+    width: 9vw;
+    height: 7vh;
+    border-top: solid;
+  }
+  header p {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+  }
+  header p:last-of-type {
+    width: 1.8vw;
+    height: 3vh;
+    font-size: 10px;
+  }
+  header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1vw;
+    height: 2.5vh;
+    background-color: lightgray;
+    border: none;
+    margin-right: 0.5vw;
+  }
+  header button:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.6s;
+    /*box-shadow: 0 0 5px 0 black;*/
+  }
+  main .topButton {
+    position: fixed;
+    top: 40em;
+    right: 2em;
+    z-index: 1;
+    font-weight: 600;
+    border: 2px outset;
+    border-radius: 5px;
+    box-shadow: 0 2px gray;
+  }
+  main a {
+    text-decoration: none;
+    color: black;
+  }
+  main .firstSectionMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 180vh;
+    background-image: url(./assets/imgMain.png);
+    background-repeat: no-repeat;
+    background-size: 101vh;
+  }
+  main .firstSectionMain section:first-of-type {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 85%;
+    height: 65vh;
+  }
+  main .firstSectionMain div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+    height: 70vh;
+    background-image: url(./assets/stormtrooperRed.png);
+    background-size: cover;
+    z-index: 1;
+  }
+  main .firstTitleMain {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    width: 11.5vw;
+    color: white;
+  }
+  main .firstSectionMain p:first-of-type {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    width: 17vw;
+    color: white;
+  }
+  main div button {
+    width: 10vw;
+    height: 6vh;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: white solid 2px;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 10) 50%
+      )
+      right;
+    background-size: 200%;
+    transition: 0.5s;
+  }
+  main div button:hover {
+    cursor: pointer;
+    font-size: 1em;
+    transition: 1s;
+    background-position: left;
+  }
+  main .firstSectionMain div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 40vw;
+    height: 35vh;
+  }
+  main .secondTitleMain {
+    width: 14.2vw;
+    height: 8vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+    border-bottom: black solid;
+  }
+  main .firstSectionMain p:last-child {
+    display: flex;
+    align-items: flex-end;
+    width: 28vw;
+    height: 22vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    text-align: right;
+    color: black;
+  }
+  main .firstFigureMain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 30vw;
+    height: 35vh;
+  }
+  main .firstFigureMain img {
+    width: 21vw;
+    height: 30vh;
+    margin-left: 0.5em;
+  }
+  main .firstSectionMain section:last-of-type {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    right: 6.5vw;
+    width: 78%;
+    height: 100vh;
+    border-top: #707070 solid;
+  }
+  main .secondFigureMain {
+    width: 28vw;
+    height: 95vh;
+  }
+  main .secondFigureMain img {
+    width: 45vw;
+    height: 100vh;
+  }
+  main h4 {
+    width: 18vw;
+    height: 16vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: right;
+    line-height: 1em;
+  }
+  main span {
+    font-size: 41px;
+    font-weight: 900;
+  }
+  main .firstSectionMain nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90vw;
+    height: 84vh;
+  }
+  main .firstSectionMain li {
+    font-family: "Roboto", sans-serif;
+    text-align: right;
+    list-style: none;
+    line-height: 1.5em;
+    margin: 1em 0;
+  }
+  main .firstSectionMain li:hover {
+    cursor: pointer;
+    background-color: tomato;
+    color: white;
+    font-weight: 400;
+  }
+  main .thirdFigureMain {
+    height: 79vh;
+  }
+  main .thirdFigureMain img {
+    width: 25vw;
+    height: 88vh;
+  }
+  main .secondSectionMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 240vh;
+    background-color: #2d2d2d;
+  }
+  main .secondSectionMain h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    color: white;
+  }
+  main h5:first-of-type {
+    display: flex;
+    align-items: flex-end;
+    width: 65vw;
+    height: 3em;
+  }
+  main h5:last-of-type {
+    display: flex;
+    align-items: center;
+    height: 35vh;
+  }
+  main .secondSectionMain section {
+    display: flex;
+    width: 85.1vw;
+    height: 62vh;
+  }
+  main .divSecondSectionMain {
+    display: flex;
+    flex-wrap: wrap;
+    width: 43.7vw;
+    height: 61vh;
+  }
+  main .figOneSecSectionMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41vw;
+    height: 61vh;
+    background-image: url(./assets/jedi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .figOneSecSectionMain div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    width: 10vw;
+    height: 10vh;
+    transform: scale(0.5);
+    transition: 1s;
+    overflow: hidden;
+    background-color: rgba(138, 43, 226, 0.473);
+    padding: 2em 3em;
+  }
+  main .figOneSecSectionMain div:hover {
+    cursor: pointer;
+    position: absolute;
+    opacity: 10;
+    width: 41vw;
+    height: 61vh;
+    transform: scale(1.05);
+    transition: 0.6s;
+  }
+  main .figOneSecSectionMain h2 {
+    width: 10vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    color: white;
+  }
+  main .figOneSecSectionMain p {
+    width: 20vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    color: white;
+  }
+  main .figOneSecSectionMain button {
+    width: 8vw;
+    height: 5vh;
+    background: transparent;
+    font-weight: 600;
+    color: white;
+    border: white solid 2px;
+    border-radius: 0px;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.274) 50%
+      )
+      right;
+    background-size: 200%;
+    transition: 0.5s;
+  }
+  main .figOneSecSectionMain button:hover {
+    cursor: pointer;
+    width: 8.5vw;
+    height: 5.5vh;
+    transition: 1s;
+    background-position: left;
+  }
+  main .figTwoSecSectionMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.6vw;
+    height: 30vh;
+    background-image: url(./assets/stormtrooperCanhao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .figTwoSecSectionMain div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    width: 5vw;
+    height: 5vh;
+    transform: scale(0.5);
+    transition: 1s;
+    overflow: hidden;
+    background-color: rgba(250, 0, 0, 0.473);
+    padding: 1em 2em;
+  }
+  main .figTwoSecSectionMain div:hover {
+    cursor: pointer;
+    opacity: 10;
+    width: 21.5vw;
+    height: 30vh;
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+  main .figTwoSecSectionMain h2 {
+    width: 10vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: white;
+  }
+  main .figTwoSecSectionMain p {
+    width: 17.5vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7em;
+    color: white;
+  }
+  main .figTwoSecSectionMain button {
+    width: 6vw;
+    height: 4vh;
+    background: transparent;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: white;
+    border: white solid 2px;
+    border-radius: 0px;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.274) 50%
+      )
+      right;
+    background-size: 200%;
+    transition: 0.5s;
+  }
+  main .figTwoSecSectionMain button:hover {
+    cursor: pointer;
+    width: 6.5vw;
+    height: 4.5vh;
+    font-size: 0.8em;
+    transition: 1s;
+    background-position: left;
+  }
+  main .figThreeSecSectionMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.6vw;
+    height: 30vh;
+    background-image: url(./assets/starGame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .figThreeSecSectionMain div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    width: 5vw;
+    height: 5vh;
+    transform: scale(0.5);
+    transition: 1s;
+    overflow: hidden;
+    background-color: rgba(124, 252, 0, 0.473);
+    padding: 1em 2em;
+  }
+  main .figThreeSecSectionMain div:hover {
+    cursor: pointer;
+    opacity: 10;
+    width: 21.5vw;
+    height: 30vh;
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+  main .figThreeSecSectionMain h2 {
+    width: 10vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: white;
+  }
+  main .figThreeSecSectionMain p {
+    width: 17.5vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    color: white;
+  }
+  main .figThreeSecSectionMain button {
+    width: 6vw;
+    height: 4vh;
+    background: transparent;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: white;
+    border: white solid 2px;
+    border-radius: 0px;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.274) 50%
+      )
+      right;
+    background-size: 200%;
+    transition: 0.5s;
+  }
+  main .figThreeSecSectionMain button:hover {
+    cursor: pointer;
+    width: 6.5vw;
+    height: 4.5vh;
+    font-size: 0.8em;
+    transition: 1s;
+    background-position: left;
+  }
+  main .figFourSecSectionMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.6vw;
+    height: 30vh;
+    background-image: url(./assets/naves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .figFourSecSectionMain div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    width: 5vw;
+    height: 5vh;
+    transform: scale(0.5);
+    transition: 1s;
+    overflow: hidden;
+    background-color: rgba(255, 215, 0, 0.473);
+    padding: 1em 2em;
+  }
+  main .figFourSecSectionMain div:hover {
+    cursor: pointer;
+    opacity: 10;
+    width: 21.5vw;
+    height: 30vh;
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+  main .figFourSecSectionMain h2 {
+    width: 10vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: white;
+  }
+  main .figFourSecSectionMain p {
+    width: 17.5vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    color: white;
+  }
+  main .figFourSecSectionMain button {
+    width: 6vw;
+    height: 4vh;
+    background: transparent;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: white;
+    border: white solid 2px;
+    border-radius: 0px;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.274) 50%
+      )
+      right;
+    background-size: 200%;
+    transition: 0.5s;
+  }
+  main .figFourSecSectionMain button:hover {
+    cursor: pointer;
+    width: 6.5vw;
+    height: 4.5vh;
+    font-size: 0.8em;
+    transition: 1s;
+    background-position: left;
+  }
+  main .figFiveSecSectionMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.6vw;
+    height: 30vh;
+    background-image: url(./assets/stormtrooper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .figFiveSecSectionMain div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    width: 5vw;
+    height: 5vh;
+    transform: scale(0.5);
+    transition: 1s;
+    overflow: hidden;
+    background-color: rgba(0, 0, 255, 0.473);
+    padding: 1em 2em;
+  }
+  main .figFiveSecSectionMain div:hover {
+    cursor: pointer;
+    opacity: 10;
+    width: 21.5vw;
+    height: 30vh;
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+  main .figFiveSecSectionMain h2 {
+    width: 10vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: white;
+  }
+  main .figFiveSecSectionMain p {
+    width: 17.5vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    color: white;
+  }
+  main .figFiveSecSectionMain button {
+    width: 6vw;
+    height: 4vh;
+    background: transparent;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: white;
+    border: white solid 2px;
+    border-radius: 0px;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.274) 50%
+      )
+      right;
+    background-size: 200%;
+    transition: 0.5s;
+  }
+  main .figFiveSecSectionMain button:hover {
+    cursor: pointer;
+    width: 6.5vw;
+    height: 4.5vh;
+    font-size: 0.8em;
+    transition: 1s;
+    background-position: left;
+  }
+  main .figSixSecSectionMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  main .figSixSecSectionMain img {
+    width: 85vw;
+    height: 90vh;
+  }
+  main .figSixSecSectionMain figcaption {
+    display: flex;
+    align-items: flex-end;
+    width: 43vw;
+    height: 4.5em;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-align: right;
+    color: white;
+  }
+  main .thirdSectionMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+  }
+  main .thirdSectionMain figure {
+    display: flex;
+    align-items: flex-end;
+    height: 20vh;
+  }
+  main .thirdSectionMain img {
+    width: 30vw;
+  }
+  main .thirdSectionMain div {
+    display: flex;
+  }
+  main .thirdSectionMain section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20vw;
+    height: 50vh;
+  }
+  main .thirdsectionmain section:hover {
+    transition: 1s;
+  }
+  main .thirdSectionMain h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    height: 10vh;
+  }
+  main .thirdSectionMain section:hover h6 {
+    transform: scale(1.1);
+    font-weight: 900;
+    transition: 0.5s;
+  }
+  main .thirdSectionMain button {
+    width: 12vw;
+    height: 7vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: white;
+    background-color: black;
+    border: black solid 2px;
+    border-radius: 0px;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 10) 50%,
+        rgba(250, 3, 3, 10) 50%
+      )
+      right;
+    background-size: 200%;
+    transition: 0.5s;
+  }
+  main .thirdSectionMain button:hover {
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 1s;
+    background-position: left;
+  }
+  main .thirdSectionMain p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10vw;
+    height: 15vh;
+    border-bottom: black solid;
+  }
+  main .thirdSectionMain section:hover p {
+    border-bottom: red solid;
+    transition: 1s;
+  }
+  footer {
+    display: flex;
+    width: 100%;
+    height: 125vh;
+  }
+  footer .firstSectionFooter {
+    display: flex;
+    width: 60%;
+    margin-right: 8em;
+    background-color: #ff5a56;
+  }
+  footer div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+  }
+  footer .firstSectionFooter section:first-of-type {
+    width: 32vw;
+  }
+  footer h6 {
+    display: flex;
+    align-items: flex-end;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    color: white;
+    width: 32vw;
+    height: 25vh;
+  }
+  footer .firstSectionFooter section:first-of-type p {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    width: 32vw;
+    height: 20vh;
+  }
+  footer .firstSectionFooter section:first-of-type div {
+    display: flex;
+    width: 32vw;
+    height: 20vh;
+  }
+  footer .firstSectionFooter section:first-of-type figure {
+    width: 16vw;
+  }
+  footer .firstSectionFooter section:first-of-type img {
+    width: 15vw;
+  }
+  footer .firstSectionFooter section:first-of-type img:hover {
+    cursor: pointer;
+  }
+  footer .firstSectionFooter section:last-of-type {
+    width: 32vw;
+    border-top: #d74430 solid;
+  }
+  footer .firstSectionFooter section:last-of-type figure {
+    display: flex;
+    align-items: center;
+    height: 35vh;
+  }
+  footer .firstSectionFooter section:last-of-type img {
+    width: 17vw;
+  }
+  footer .firstSectionFooter section:last-of-type p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    width: 32vw;
+    height: 6vh;
+  }
+  footer .lastFigureFooter {
+    display: flex;
+    align-items: flex-end;
+    width: 13vw;
+    height: 113vh;
+  }
+  footer .lastFigureFooter img {
+    width: 50vw;
+    height: 130vh;
+  }
+  footer p:last-child {
+    display: flex;
+    align-items: flex-end;
+    width: 25vw;
+    height: 120vh;
+  }
+  /* -------------------- MOBILE -------------------- */
+  @media screen and (max-width: 767px) {
+    header {
+      align-items: flex-end;
+      height: 30vh;
+      background-size: 120vw 50vh;
+      /*    background-position: -8em 0em;*/
+    }
+    header .figureHeaderKylo {
+      width: 50vw;
+      height: 20vh;
+    }
+    header .figureHeaderKylo img {
+      width: 55vw;
+      height: 25vh;
+    }
+    header .firstFigureHeader {
+      align-items: flex-start;
+      width: 5vw;
+      height: 10vh;
+    }
+    header section {
+      width: 22vw;
+      height: 10vh;
+    }
+    header section figure {
+      width: 33vw;
+    }
+    header figure img {
+      height: 3vh;
+    }
+    header h2 {
+      align-items: flex-end;
+      width: 16vw;
+      height: 4em;
+      font-size: 1em;
+      line-height: 20px;
+      padding: 0px 0px 5px 0em;
+    }
+    header span {
+      width: 19vw;
+      height: 7.5vh;
+      border: none;
+    }
+    header .secondDivHeader {
+      width: 25vw;
+      height: 4vh;
+      padding-left: 0em;
+    }
+    header button {
+      width: 5.5vw;
+      height: 2.8vh;
+      font-size: 1em;
+      font-weight: 900;
+    }
+    header p:last-of-type {
+      width: 5vw;
+    }
+    main .topButton {
+      display: none;
+      top: 40vh;
+      right: 160vw;
+    }
+    main .firstSectionMain {
+      justify-content: space-evenly;
+      /*align-items: center;*/
+      height: 160vh;
+      background-size: 47vh;
+      padding-right: 1em;
+    }
+    main .firstSectionMain section:first-of-type {
+      flex-direction: column;
+      height: 150vh;
+    }
+    main .firstSectionMain div:first-of-type {
+      margin-top: 5em;
+      width: 70vw;
+      height: 50vh;
+    }
+    main .firstTitleMain {
+      font-size: 1.5em;
+      text-align: center;
+      width: 30.6vw;
+    }
+    main .firstSectionMain p:first-of-type {
+      width: 50vw;
+      font-size: 1em;
+    }
+    main div button {
+      width: 25vw;
+    }
+    main .firstSectionMain div:last-of-type {
+      justify-content: flex-start;
+      position: relative;
+      top: 30vh;
+      height: 30vh;
+    }
+    main .firstFigureMain {
+      justify-content: flex-end;
+      position: relative;
+      top: -29vh;
+      width: 75vw;
+      height: 27vh;
+    }
+    main .firstFigureMain img {
+      width: 70vw;
+      height: 25vh;
+      margin: 0px;
+    }
+    main .secondTitleMain {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 55vw;
+      height: 5vh;
+    }
+    main .firstSectionMain p:last-child {
+      align-items: flex-start;
+      width: 90vw;
+      height: 15em;
+      border-bottom: 1em;
+    }
+    main .firstSectionMain section:last-of-type {
+      margin-top: 1.5em;
+      border-top: #707070 solid 3px;
+    }
+    main .secondFigureMain {
+      display: flex;
+      justify-content: flex-end;
+      width: 30vw;
+      height: 30vh;
+    }
+    main .secondFigureMain img {
+      width: 45vw;
+      height: 38vh;
+    }
+    main h4 {
+      width: 30vw;
+      height: 7vh;
+      font-size: 1em;
+    }
+    main span {
+      font-size: 1em;
+    }
+    main .firstSectionMain nav {
+      width: 22vw;
+      height: 30vh;
+      z-index: 1;
+    }
+    main .firstSectionMain li {
+      width: 41vw;
+      font-size: 0.5em;
+    }
+    main .thirdFigureMain {
+      display: flex;
+      justify-content: flex-end;
+      width: 33vw;
+      height: 30vh;
+    }
+    main .thirdFigureMain img {
+      widows: 35vw;
+      height: 35vh;
+    }
+    main .secondSectionMain {
+      height: 300vh;
+    }
+    main .secondSectionMain h5 {
+      font-size: 1.2em;
+    }
+    main h5:first-of-type {
+      justify-content: center;
+    }
+    main h5:last-of-type {
+      width: 80vw;
+      height: 10vh;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    main .secondSectionMain section:first-of-type {
+      height: 204.4vh;
+      display: inline;
+    }
+    main .divSecondSectionMain {
+      width: 83.3vw;
+    }
+    main .secondSectionMain .fig {
+      width: 83.3vw;
+      height: 40.6vh;
+    }
+    main .fig div:hover {
+      width: 83.3vw;
+      height: 40.6vh;
+    }
+    main .fig h2 {
+      font-size: 2em;
+    }
+    main .fig p {
+      width: 60vw;
+      font-size: 1em;
+    }
+    main .fig button {
+      font-size: 0.7em;
+      width: 18vw;
+    }
+    main .fig button:hover {
+      font-size: 0.8em;
+      width: 18.5vw;
+    }
+    main .secondSectionMain figure {
+      width: 100%;
+    }
+    main .secondSectionMain figure img {
+      width: 100%;
+      height: 40vh;
+    }
+    main .secondSectionMain figcaption {
+      width: 71vw;
+      height: 6em;
+      font-size: 0.5em;
+      padding-right: 4em;
+    }
+    main .thirdSectionMain {
+      height: 100vh;
+    }
+    main .thirdSectionMain div {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 30vw;
+      height: 92vh;
+    }
+    main .thirdSectionMain figure {
+      justify-content: flex-end;
+      width: 70vw;
+      height: 95vh;
+    }
+    main .thirdSectionMain img {
+      width: 120vw;
+      height: 120vh;
+    }
+    main .thirdSectionMain section {
+      width: 50vw;
+      height: 30vh;
+    }
+    main .thirdSectionMain h6 {
+      height: 1.7em;
+    }
+    main .thirdSectionMain button {
+      width: 35vw;
+      height: 4em;
+      font-size: 0.8em;
+    }
+    main .thirdSectionMain p {
+      width: 35vw;
+      height: 12vh;
+      border-bottom: black solid;
+    }
+    footer {
+      flex-direction: column;
+      height: 185vh;
+    }
+    footer .firstSectionFooter {
+      flex-direction: column;
+      width: 100%;
+    }
+    footer div:first-child {
+      width: 100%;
+    }
+    footer .firstSectionFooter section:first-of-type {
+      width: 85.5vw;
+    }
+    footer h6 {
+      justify-content: center;
+      width: 84vw;
+      height: 15vh;
+    }
+    footer .firstSectionFooter section:first-of-type p {
+      width: 84vw;
+    }
+    footer .firstSectionFooter section:first-of-type div {
+      justify-content: center;
+      width: 84vw;
+      height: 14vh;
+    }
+    footer .firstSectionFooter section:first-of-type figure {
+      width: 41vw;
+      height: 13vh;
+    }
+    footer .firstSectionFooter section:first-of-type img {
+      width: 40vw;
+    }
+    footer .firstSectionFooter section:last-of-type {
+      width: 85.5vw;
+    }
+    footer .firstSectionFooter section:last-of-type figure {
+      justify-content: center;
+      height: 27vh;
+    }
+    footer .firstSectionFooter section:last-of-type img {
+      width: 45vw;
+      height: 18vh;
+    }
+    footer .firstSectionFooter section:last-of-type p {
+      align-items: flex-start;
+      width: 84vw;
+      height: 11vh;
+      font-size: 1em;
+      padding: 0px;
+    }
+    footer .lastFigureFooter {
+      justify-content: flex-end;
+      align-items: flex-start;
+      width: 85vw;
+      height: 35vh;
+    }
+    footer .lastFigureFooter img {
+      width: 80vw;
+      height: 70vh;
+    }
+    footer p:last-child {
+      width: 78.5vw;
+      height: 45vh;
+      font-size: 0.7em;
+      padding-left: 1.1em;
+    }
+    /*---------------------------------------------------------------------------*/
+  }
+  
