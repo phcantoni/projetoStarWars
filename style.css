@@ -353,11 +353,33 @@
     font-size: 2em;
     color: white;
   }
+  main .figOneSecSectionMain h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-top: white solid;
+    border-left: white solid;
+    margin-top: -1em;
+    margin-left: -0.7em;
+  }
   main .figOneSecSectionMain p {
     width: 20vw;
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
     color: white;
+  }
+  main .figOneSecSectionMain p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-bottom: white solid;
+    border-right: white solid;
+    margin-left: 18.2em;
+    margin-top: 2.2em;
   }
   main .figOneSecSectionMain button {
     width: 8vw;
@@ -420,11 +442,33 @@
     font-size: 1em;
     color: white;
   }
+  main .figTwoSecSectionMain h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-top: white solid;
+    border-left: white solid;
+    margin-top: -0.8em;
+    margin-left: -0.8em;
+  }
   main .figTwoSecSectionMain p {
     width: 17.5vw;
     font-family: "Roboto", sans-serif;
     font-size: 0.7em;
     color: white;
+  }
+  main .figTwoSecSectionMain p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-bottom: white solid;
+    border-right: white solid;
+    margin-left: 19em;
+    margin-top: 3em;
   }
   main .figTwoSecSectionMain button {
     width: 6vw;
@@ -489,11 +533,33 @@
     font-size: 1em;
     color: white;
   }
+  main .figThreeSecSectionMain h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-top: white solid;
+    border-left: white solid;
+    margin-top: -0.6em;
+    margin-left: -0.8em;
+  }
   main .figThreeSecSectionMain p {
     width: 17.5vw;
     font-family: "Roboto", sans-serif;
     font-size: 0.8em;
     color: white;
+  }
+  main .figThreeSecSectionMain p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-bottom: white solid;
+    border-right: white solid;
+    margin-left: 16.5em;
+    margin-top: 1.5em;
   }
   main .figThreeSecSectionMain button {
     width: 6vw;
@@ -558,11 +624,33 @@
     font-size: 1em;
     color: white;
   }
+  main .figFourSecSectionMain h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-top: white solid;
+    border-left: white solid;
+    margin-top: -0.8em;
+    margin-left: -0.8em;
+  }
   main .figFourSecSectionMain p {
     width: 17.5vw;
     font-family: "Roboto", sans-serif;
     font-size: 0.8em;
     color: white;
+  }
+  main .figFourSecSectionMain p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-bottom: white solid;
+    border-right: white solid;
+    margin-left: 16.5em;
+    margin-top: 1.5em;
   }
   main .figFourSecSectionMain button {
     width: 6vw;
@@ -608,8 +696,6 @@
     transform: scale(1.1);
     transition: 0.6s;
   }
-  /*-------------------------------------------------------------------------------------------------
-  ---------------------------------------------------------------------------------------------------*/
   main .figFiveSecSectionMain div {
     display: flex;
     flex-direction: column;
@@ -623,25 +709,39 @@
     background-color: rgba(0, 0, 255, 0.473);
     padding: 1em 2em;
   }
-  /*main .figFiveSecSectionMain div:hover {
-    cursor: pointer;
-    opacity: 10;
-    width: 21.5vw;
-    height: 30vh;
-    transform: scale(1.1);
-    transition: 0.6s;
-  }*/
   main .figFiveSecSectionMain h2 {
     width: 10vw;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     color: white;
   }
+  main .figFiveSecSectionMain h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-top: white solid;
+    border-left: white solid;
+    margin-top: -0.8em;
+    margin-left: -0.8em;
+  }
   main .figFiveSecSectionMain p {
     width: 17.5vw;
     font-family: "Roboto", sans-serif;
     font-size: 0.8em;
     color: white;
+  }
+  main .figFiveSecSectionMain p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-bottom: white solid;
+    border-right: white solid;
+    margin-left: 16.5em;
+    margin-top: 2em;
   }
   main .figFiveSecSectionMain button {
     width: 6vw;
@@ -669,6 +769,15 @@
     transition: 1s;
     background-position: left;
   }
+  /*main .figFiveSecSectionMain button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-bottom: white solid;
+    border-right: white solid;
+  }*/
   main .figSixSecSectionMain {
     display: flex;
     flex-direction: column;
